@@ -11,7 +11,7 @@
 
 **OS platform**: Windows 11 
 
-**Libraries/Packages**: scikit-learn, pandas, numpy, ipykernel, matplotlib, seaborn, imbalanced-learn, optuna, xgboost, catboost, lightgbm, scipy, nltk, spaCy, dill, langdetect **(All are in updated version)**
+**Libraries/Packages**: scikit-learn, pandas, numpy, ipykernel, matplotlib, seaborn, imbalanced-learn, optuna, xgboost, catboost, lightgbm, scipy, nltk, spaCy, dill, langdetect 
  
 ## Table of contents 
 [A. Abstract](#a-abstract)
