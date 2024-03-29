@@ -7,8 +7,6 @@ from U_logger import logging
 from U_utils import create_if_missing_folder, get_filepath, has_inference_data
 from U_constants import TARGET, NEEDED_COLUMNS, RANDOM_STATE, MODEL_DIR, DATA_DIR, ORIGINAL_VALID_PATH, RAW_DATA_PATH, ORIGINAL_DATA, INFERENCE_DATA_PATH
 from sklearn.model_selection import train_test_split, StratifiedKFold
-
-TARGET = "AdoptionSpeed"
     
 class DataIngestion:
     def __init__(self):
@@ -42,7 +40,7 @@ class DataIngestion:
             skf = StratifiedKFold(n_splits=6, random_state=RANDOM_STATE, shuffle=True)
             
             train_sets, test_sets = [], []
-            for fold, [train_index, test_index] in enumerate(skf.split(train_test_set, train_test_set['AdoptionSpeed'].values)):
+            for fold, [train_index, test_index] in enumerate(skf.split(train_test_set, train_test_set[TARGET].values)):
                 _, train_path, test_path, _ = get_filepath(fold)
                 train_set = train_test_set.iloc[train_index, :]
                 test_set = train_test_set.iloc[test_index, :]
