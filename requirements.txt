@@ -6,8 +6,6 @@ matplotlib
 seaborn
 imbalanced-learn
 optuna
-xgboost
-catboost
 lightgbm
 dill
 scipy
